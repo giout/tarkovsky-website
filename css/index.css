@@ -1,0 +1,23 @@
+:root {
+    --first: #181C14;
+    --second: #3C3D37;
+    --third: #697565;
+    --fourth: #ECDFCC;
+}
+
+* {
+    color: var(--fourth) !important;
+}
+
+/* navbar */
+.navbar-brand {
+    margin-left: 15px !important;
+}
+
+.nav-item {
+    margin-right: 30px !important;
+}
+
+.custom-navbar {
+    background-color: var(--first);
+}
