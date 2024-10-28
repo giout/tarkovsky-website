@@ -13,6 +13,10 @@ a {
     text-decoration:none !important;
 }
 
+p {
+    text-align: center;
+}
+
 /* navbar */
 .navbar-collapse {
     display: flex;
@@ -45,17 +49,60 @@ a {
 /* hero */
 .hero-image-container {
     width: 100%;
-    height: 100vh;
+    aspect-ratio: 2/1;
+    background-image: url('../ignore/stalker.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.movie-image {
+.shadow {
+    background-color: rgba(0,0,0,0.7);
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.phrase {
+    font-size: 1.75rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.author {
+    font-size: 1.25rem;
 }
 
 /* responsive design */
 @media (max-width: 991px) {
     .navbar-collapse {
         justify-content: center;
+    }
+}
+
+@media (max-width: 838px) {
+    .phrase {
+        font-size: 1.25rem
+    }
+
+    .author {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .phrase {
+        font-size: 1rem;
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
+    }
+
+    .author {
+        font-size: 0.5rem;
     }
 }
