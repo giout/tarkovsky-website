@@ -9,15 +9,53 @@
     color: var(--fourth) !important;
 }
 
+a {
+    text-decoration:none !important;
+}
+
 /* navbar */
+.navbar-collapse {
+    display: flex;
+    justify-content: end;
+}
+
 .navbar-brand {
     margin-left: 15px !important;
 }
 
 .nav-item {
-    margin-right: 30px !important;
+    margin-right: 25px !important;
 }
 
 .custom-navbar {
     background-color: var(--first);
+    color: var(--fourth);
+}
+
+.navbar-toggler-icon {
+    /* change fourth color format from hex to rgba */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(236, 223, 204, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+  
+
+/* hero */
+.hero-image-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.movie-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive design */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        justify-content: center;
+    }
 }
