@@ -1,13 +1,14 @@
 :root {
-    --first: #181C14;
-    --second: #3C3D37;
-    --third: #697565;
-    --fourth: #ECDFCC;
+    --first-color: #181C14;
+    --second-color: #3C3D37;
+    --third-color: #697565;
+    --fourth-color: #ECDFCC;
+    --font-family: "Alegreya", serif;
 }
 
 * {
-    color: var(--fourth) !important;
-    font-family: "Alegreya", serif;
+    color: var(--fourth-color) !important;
+    font-family: var(--font-family);
     font-optical-sizing: auto;
     font-style: normal;      
 }
@@ -17,7 +18,7 @@ a {
 }
 
 a:hover {
-    color: var(--third) !important;
+    color: var(--third-color) !important;
 }
 
 a:visited, a:link, a:active {
@@ -61,7 +62,7 @@ img {
 }
 
 footer {
-    background-color: var(--first);
+    background-color: var(--first-color);
     text-align: center;
     padding: 1rem;
 }
@@ -89,8 +90,8 @@ a {
 }
 
 .custom-navbar {
-    background-color: var(--first);
-    color: var(--fourth);
+    background-color: var(--first-color);
+    color: var(--fourth-color);
 }
 
 .navbar-toggler-icon {
@@ -142,11 +143,11 @@ a {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
-    background-color: var(--second);
+    background-color: var(--second-color);
 }
 
 .about-text {
-    background-color: var(--second);
+    background-color: var(--second-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,7 +210,7 @@ a {
 
 /* polaroids */
 .polaroid-text {
-    background-color: var(--third);
+    background-color: var(--third-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,7 +222,7 @@ a {
 }
 
 .polaroid-container {
-    background-color: var(--third);
+    background-color: var(--third-color);
     width: 100%;
     height: auto;
     display: grid;
