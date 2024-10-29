@@ -39,6 +39,16 @@ p {
     margin: 5rem;
 }
 
+.pic {
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
 /* navbar */
 .navbar-collapse {
     display: flex;
@@ -73,8 +83,6 @@ p {
     width: 100%;
     aspect-ratio: 2/1;
     background-image: url('../ignore/stalker.jpg');
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +96,8 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 /* about */ 
@@ -109,8 +119,57 @@ p {
 .about-pic {
     aspect-ratio: 4/3;
     background-image: url('../ignore/tarkovsky.jpg');
-    background-size: cover;
-    background-position: center;
+}
+
+/* films */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.carousel, .carousel-item {
+    aspect-ratio: 16/9;
+    width: 75%;
+}
+
+.carousel-img-container {
+    background-color: var(--first);
+    position: relative !important;
+}
+
+.carousel-img {
+    opacity: 0.2;
+}
+
+.title-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.spanish-title {
+    font-size: 1.75rem;
+}
+
+.russian-title {
+    font-size: 1.25rem;
+}
+
+/* sculpt in time */
+.book-image-container {
+    width: 100%;
+    aspect-ratio: 2/1;
+    background-image: url('../ignore/tarkovsky2.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* responsive design */
@@ -121,11 +180,11 @@ p {
 }
 
 @media (max-width: 838px) {
-    .phrase {
+    .phrase, .spanish-title {
         font-size: 1.25rem
     }
 
-    .author, .info {
+    .author, .info, .russian-title {
         font-size: 0.75rem;
     }
 
@@ -152,6 +211,16 @@ p {
         width: 75%;
         border-radius: 5%;
     }
+
+    .about-text {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .carousel, .carousel-item {
+        width: 100%;
+    }
 }
 
 @media (max-width: 520px) {
@@ -160,11 +229,16 @@ p {
         margin-left: 2.5rem;
     }
 
-    .phrase {
+    .phrase, .spanish-title {
         font-size: 1rem;
     }
 
-    .author{
+    .author, .russian-title {
         font-size: 0.5rem;
+    }
+    
+    .shadow {
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
     }
 }

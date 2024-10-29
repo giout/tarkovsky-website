@@ -22,10 +22,10 @@
                 <a class="nav-link" href="#about">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Filmografía</a>
+                <a class="nav-link" href="#films">Filmografía</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Esculpir en el tiempo</a>
+                <a class="nav-link" href="#sculpt-in-time">Esculpir en el tiempo</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Polaroids</a>
@@ -36,7 +36,7 @@
     </nav>
     <!--hero-->
     <section>
-        <div class="d-flex justify-content-center align-items-center flex-column hero-image-container">
+        <div class="d-flex justify-content-center align-items-center flex-column hero-image-container pic">
           <div class="shadow">
             <p class="phrase text">"El arte nace de un mundo mal diseñado".</p>
             <p class="author text">Andrei Tarkovsky</p>
@@ -46,9 +46,101 @@
     <!--about-->
     <section id="about">
       <div class="about-container">
-        <div class="grid-row about-pic"></div>
+        <div class="grid-row about-pic pic"></div>
         <div class="grid-row about-text">
-          <p class="text info">Andrei Tarkovsky (1932-1986) fue un director de cine soviético que realizó un cortometraje y siete largometrajes, los cuales tenían un carácter onírico y filosófico. Su visión única del lo llevó a ser considerado como uno de los cineastas más influyentes de la historia.</p>
+          <p class="text info">Andrei Tarkovsky (1932-1986) fue un guionista y director de cine soviético responsable de dirigir cortometrajes y largometrajes que tenían un carácter onírico y filosófico. Su visión única del cine lo llevó a ser considerado como uno de los cineastas más influyentes de la historia.</p>
+        </div>
+      </div>
+    </section>
+    <!--films-->
+    <section id="films">
+      <div class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" id="the-steamroller-and-the-violin">
+              <div class="carousel-img-container">
+                <img class="carousel-img" src="ignore/thesteamrollerandtheviolin.jpg" alt="The steamroller and the violin">
+                <div class="title-container">
+                  <p class="spanish-title">La aplanadora y el violín (1961)</p>
+                  <p class="russian-title">Каток и скрипка</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" id="ivans-childhood">
+                <img class="carousel-img" src="ignore/ivanschildhood1.jpg" alt="Ivan's childhood">
+                <div class="title-container">
+                  <p class="spanish-title">La infancia de Iván (1962)</p>
+                  <p class="russian-title">Иваново детство</p>
+                </div>
+            </div>
+            <div class="carousel-item" id="andrei-rublev">
+              <img class="carousel-img" src="ignore/andreirublev1.jpg" alt="Andrei rublev">
+              <div class="title-container">
+                <p class="spanish-title">Andrei Rublev (1966)</p>
+                <p class="russian-title">Андрей Рублёв</p>
+              </div>
+            </div>
+            <div class="carousel-item" id="solaris">
+              <img class="carousel-img" src="ignore/solaris1.jpg" alt="Solaris">
+              <div class="title-container">
+                <p class="spanish-title">Solaris (1972)</p>
+                <p class="russian-title">Солярис</p>
+              </div>
+            </div>
+            <div class="carousel-item" id="mirror">
+              <img class="carousel-img" src="ignore/mirror1.jpg" alt="Mirror">
+              <div class="title-container">
+                <p class="spanish-title">El espejo (1975)</p>
+                <p class="russian-title">Зеркало</p>
+              </div>
+            </div>
+            <div class="carousel-item" id="stalker">
+              <img class="carousel-img" src="ignore/stalker2.jpg" alt="Stalker">
+              <div class="title-container">
+                <p class="spanish-title">Stalker (1979)</p>
+                <p class="russian-title">Сталкер</p>
+              </div>
+            </div>
+            <div class="carousel-item" id="nostalghia">
+              <img class="carousel-img" src="ignore/nostalghia1.jpg" alt="Nostalghia">
+              <div class="title-container">
+                <p class="spanish-title">Nostalgia (1983)</p>
+                <p class="russian-title">Ностальгия</p>
+              </div>
+            </div>
+            <div class="carousel-item" id="sacrifice">
+              <img class="carousel-img" src="ignore/sacrifice2.jpg" alt="Sacrifice">
+              <div class="title-container">
+                <p class="spanish-title">El sacrificio (1986)</p>
+                <p class="russian-title">	Offret</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="sculpt-in-time">
+      <div class="d-flex justify-content-center align-items-center flex-column book-image-container pic">
+        <div class="shadow">
+          <p class="info text">Tarkovsky plasmó gran parte de su concepción del cine a través de diversos escritos teóricos, los cuales están recopilados en el libro “Esculpir en el tiempo”, publicado en 1985. Esta obra explora temas como el propósito del arte, la relación del artista con el público, la responsabilidad moral del artista o los elementos diferenciales del cine con respecto a las otras artes.</p>
         </div>
       </div>
     </section>
