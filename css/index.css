@@ -24,7 +24,7 @@
 
 .about-pic {
   aspect-ratio: 4/3;
-  background-image: url("../ignore/tarkovsky.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/web-apps-d2be9.appspot.com/o/tarkovsky.jpg?alt=media&token=df4d6f95-2efb-4414-9e94-280ca4a15d42");
 }
 
 .about-text {
@@ -59,7 +59,7 @@ a:hover {
 
 .book-image-container {
   aspect-ratio: 2/1;
-  background-image: url("../ignore/tarkovsky2.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/web-apps-d2be9.appspot.com/o/tarkovsky2.jpg?alt=media&token=f26b40af-edf1-4a90-a5c3-0f12218ad9a7");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,7 @@ footer {
 .hero-image-container {
   align-items: center;
   aspect-ratio: 2/1;
-  background-image: url("../ignore/stalker.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/web-apps-d2be9.appspot.com/o/stalker.jpg?alt=media&token=f099b44f-386c-4f27-814c-6b47c9e9f4f0");
   display: flex;
   justify-content: center;
   width: 100%;
@@ -131,7 +131,7 @@ img {
 
 .last-image-container {
   aspect-ratio: 2/1;
-  background-image: url("../ignore/sacrifice1.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/web-apps-d2be9.appspot.com/o/sacrifice1.jpg?alt=media&token=796131b2-e8a2-4bc9-a853-4db468d87524");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,7 +183,7 @@ p {
 
 .polaroid-pic {
   aspect-ratio: 4/3;
-  background-image: url("../ignore/polaroid1.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/web-apps-d2be9.appspot.com/o/polaroid1.jpg?alt=media&token=121132e1-4f20-44a1-ad66-27f956c48adb");
 }
 
 .polaroid-text {
