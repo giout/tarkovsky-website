@@ -125,6 +125,16 @@ a {
     padding-right: 2.5rem;
 }
 
+.animate {
+    opacity: 0;
+}
+
+.text-animation {
+    animation-name: fade;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
 /* about */ 
 .about-container {
     width: 100%;
@@ -314,5 +324,18 @@ a {
     .shadow {
         padding-right: 0.7rem;
         padding-left: 0.7rem;
+    }
+}
+
+/* animations */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity: 1;
     }
 }
