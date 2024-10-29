@@ -55,6 +55,10 @@ footer {
     padding: 1rem;
 }
 
+span {
+    text-align: center;
+}
+
 /* navbar */
 .navbar-collapse {
     display: flex;
