@@ -49,6 +49,12 @@ img {
     height: 100%;
 }
 
+footer {
+    background-color: var(--first);
+    text-align: center;
+    padding: 1rem;
+}
+
 /* navbar */
 .navbar-collapse {
     display: flex;
@@ -107,6 +113,7 @@ img {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
+    background-color: var(--second);
 }
 
 .about-text {
@@ -114,6 +121,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.about-pic {
+    aspect-ratio: 4/3;
+    background-image: url('../ignore/tarkovsky.jpg');
 }
 
 /* films */
@@ -169,6 +181,32 @@ img {
 /* polaroids */
 .polaroid-text {
     background-color: var(--third);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.polaroid-pic {    
+    aspect-ratio: 4/3;
+    background-image: url('../ignore/polaroid1.jpg');
+}
+
+.polaroid-container {
+    background-color: var(--third);
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+.last-image-container {
+    width: 100%;
+    aspect-ratio: 2/1;
+    background-image: url('../ignore/sacrifice1.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* responsive design */
@@ -197,21 +235,20 @@ img {
         font-size: 0.75rem;
     }
 
-    .about-container {
+    .about-container, .polaroid-container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         padding-top: 2.5rem;
-        background-color: var(--second);
     }
 
-    .about-pic {
+    .about-pic, .polaroid-pic {
         width: 75%;
         border-radius: 5%;
     }
 
-    .about-text {
+    .about-text, .polaroid-text {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         padding-bottom: 1rem;
