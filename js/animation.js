@@ -10,7 +10,7 @@ const observerOptions = {
 };
 
 // iterate over all target elements to add them the animating class
-function intersectionCallback(intersectingEntries) {
+const intersectionCallback = (intersectingEntries) => {
   for (let j = 0; j < intersectingEntries.length; j++) {
     if (intersectingEntries[j].isIntersecting && intersectingEntries[j].intersectionRatio > observerOptions.threshold) {
       if (intersectingEntries[j].target && intersectingEntries[j].target.classList) {
@@ -21,11 +21,32 @@ function intersectionCallback(intersectingEntries) {
   }
 }
 
-// when DOM is fully loaded, set intersection observer to observe elements with targetClassName
-document.addEventListener('DOMContentLoaded', function() {
+const intersection = () => {
   let observer = new IntersectionObserver(intersectionCallback, observerOptions);
   let elementsAnimatedOnVisibility = document.getElementsByClassName(targetClassName);
   for (let i = 0; i < elementsAnimatedOnVisibility.length; i++) {
     observer.observe(elementsAnimatedOnVisibility[i]);
   }
+}
+
+// when DOM is fully loaded, set intersection observer to observe elements with targetClassName
+document.addEventListener('DOMContentLoaded', () => {
+  // reference all images
+  const images = document.querySelectorAll('img')
+  let loadedImages = 0
+
+  // verify all images are loaded
+  images.forEach((img) => {
+    img.addEventListener('load', () => {
+      loadedImages += 1
+      if (loadedImages == images.length) {
+        intersection()
+      }
+    })
+
+    // handle case where image is already loaded before assigning load event
+    if (img.complete) {
+      img.dispatchEvent(new Event('load'))
+    }
+  })
 });
