@@ -1,342 +1,353 @@
 :root {
-    --first-color: #181C14;
-    --second-color: #3C3D37;
-    --third-color: #697565;
-    --fourth-color: #ECDFCC;
-    --font-family: "Alegreya", serif;
+  --first-color: #181c14;
+  --second-color: #3c3d37;
+  --third-color: #697565;
+  --fourth-color: #ecdfcc;
+  --font-family: "Alegreya", serif;
 }
 
 * {
-    color: var(--fourth-color) !important;
-    font-family: var(--font-family);
-    font-optical-sizing: auto;
-    font-style: normal;      
+  color: var(--fourth-color) !important;
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-a {
-    text-decoration:none !important;
-}
-
-a:hover {
-    color: var(--third-color) !important;
-}
-
-a:visited, a:link, a:active {
-    text-decoration:none !important;
-}
-
-p {
-    text-align: center;
-}
-
-.grid-row {
-    width: 100%;
-    height: 100%;
-}
-
-.text {
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-
-.phrase {
-    font-size: 1.75rem;
-}
-
-.author, .info {
-    font-size: 1.25rem;
-}
-
-.info {
-    margin: 5rem;
-}
-
-.pic {
-    background-size: cover;
-    background-position: center;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-}
-
-footer {
-    background-color: var(--first-color);
-    text-align: center;
-    padding: 1rem;
-}
-
-span {
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* navbar */
-.navbar-collapse {
-    display: flex;
-    justify-content: end;
-}
-
-.navbar-brand {
-    margin-left: 15px !important;
-}
-
-.nav-item {
-    margin-right: 25px !important;
-}
-
-.custom-navbar {
-    background-color: var(--first-color);
-    color: var(--fourth-color);
-}
-
-.navbar-toggler-icon {
-    /* change fourth color format from hex to rgba */
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(236, 223, 204, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none !important;
-}
-  
-
-/* hero */
-.hero-image-container {
-    width: 100%;
-    aspect-ratio: 2/1;
-    background-image: url('../ignore/stalker.jpg');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.shadow {
-    background-color: rgba(0,0,0,0.7);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-}
-
-.animate {
-    opacity: 0;
-}
-
-.text-animation {
-    animation-name: fade;
-    animation-duration: 1.5s;
-    opacity: 1;
-}
-
-/* about */ 
 .about-container {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    background-color: var(--second-color);
-}
-
-.about-text {
-    background-color: var(--second-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--second-color);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .about-pic {
-    aspect-ratio: 4/3;
-    background-image: url('../ignore/tarkovsky.jpg');
+  aspect-ratio: 4/3;
+  background-image: url("../ignore/tarkovsky.jpg");
 }
 
-/* films */
+.about-text {
+  align-items: center;
+  background-color: var(--second-color);
+  display: flex;
+  justify-content: center;
+}
+
+.animate {
+  opacity: 0;
+}
+
+.author,
+.info {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:visited,
+a:link,
+a:active {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--third-color) !important;
+}
+
+.book-image-container {
+  aspect-ratio: 2/1;
+  background-image: url("../ignore/tarkovsky2.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.carousel {
+  aspect-ratio: 16/9;
+  width: 75%;
+}
+
 .carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-}
-.carousel, .carousel-item {
-    aspect-ratio: 16/9;
-    width: 75%;
-}
-
-.carousel-img-container {
-    position: relative !important;
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
 .carousel-img {
-    opacity: 0.2;
+  opacity: 0.2;
+}
+
+.carousel-img-container {
+  position: relative !important;
+}
+
+.carousel-item {
+  aspect-ratio: 16/9;
+  width: 75%;
+}
+
+.custom-navbar {
+  background-color: var(--first-color);
+  color: var(--fourth-color);
+}
+
+footer {
+  background-color: var(--first-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+.grid-row {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-image-container {
+  align-items: center;
+  aspect-ratio: 2/1;
+  background-image: url("../ignore/stalker.jpg");
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.img-opacity {
+  opacity: 0.5;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.info {
+  margin: 5rem;
+}
+
+.last-image-container {
+  aspect-ratio: 2/1;
+  background-image: url("../ignore/sacrifice1.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-left: 15px !important;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: end;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(236, 223, 204, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.nav-item {
+  margin-right: 25px !important;
+}
+
+.pic {
+  background-position: center;
+  background-size: cover;
+}
+
+.phrase {
+  font-size: 1.75rem;
+}
+
+.polaroid-container {
+  background-color: var(--third-color);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.polaroid-pic {
+  aspect-ratio: 4/3;
+  background-image: url("../ignore/polaroid1.jpg");
+}
+
+.polaroid-text {
+  align-items: center;
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: center;
+}
+
+.russian-title {
+  font-size: 1.25rem;
+}
+
+.shadow {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  width: 100%;
+}
+
+.spanish-title {
+  font-size: 1.75rem;
+}
+
+span {
+  text-align: center;
+}
+
+.text {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.text-animation {
+  animation-duration: 1.5s;
+  animation-name: fade;
+  opacity: 1;
 }
 
 .title-container {
-    position: absolute;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+p {
+  text-align: center;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 838px) {
+  .author,
+  .info,
+  .russian-title {
+    font-size: 0.75rem;
+  }
+
+  .info {
+    margin: 1rem;
+  }
+
+  .phrase,
+  .spanish-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-container,
+  .polaroid-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 0;
-    left: 0;
+    padding-top: 2.5rem;
+  }
+
+  .about-pic,
+  .polaroid-pic {
+    width: 75%;
+    border-radius: 5%;
+  }
+
+  .about-text,
+  .polaroid-text {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .carousel,
+  .carousel-item {
     width: 100%;
-    height: 100%;
-}
+  }
 
-.spanish-title {
-    font-size: 1.75rem;
-}
-
-.russian-title {
-    font-size: 1.25rem;
-}
-
-/* sculpt in time */
-.book-image-container {
-    width: 100%;
-    aspect-ratio: 2/1;
-    background-image: url('../ignore/tarkovsky2.jpg');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* polaroids */
-.polaroid-text {
-    background-color: var(--third-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.polaroid-pic {    
-    aspect-ratio: 4/3;
-    background-image: url('../ignore/polaroid1.jpg');
-}
-
-.polaroid-container {
-    background-color: var(--third-color);
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-}
-
-.last-image-container {
-    width: 100%;
-    aspect-ratio: 2/1;
-    background-image: url('../ignore/sacrifice1.jpg');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* responsive design */
-@media (min-width: 1600px) {
-    .text {
-        margin-right: 4rem;
-        margin-left: 4rem;
-    }
-
-    .phrase {
-        font-size: 2.25rem;
-    }
-    
-    .author, .info, .russian-title {
-        font-size: 2rem;
-    }
-
-    .phrase, .spanish-title {
-        font-size: 2.25rem;
-    }
-}
-
-@media (max-width: 991px) {
-    .navbar-collapse {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 838px) {
-    .phrase, .spanish-title {
-        font-size: 1.25rem
-    }
-
-    .author, .info, .russian-title {
-        font-size: 0.75rem;
-    }
-
-    .info {
-        margin: 1rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .info {
-        font-size: 0.75rem;
-    }
-
-    .about-container, .polaroid-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 2.5rem;
-    }
-
-    .about-pic, .polaroid-pic {
-        width: 75%;
-        border-radius: 5%;
-    }
-
-    .about-text, .polaroid-text {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        padding-bottom: 1rem;
-    }
-
-    .carousel, .carousel-item {
-        width: 100%;
-    }
+  .info {
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 520px) {
-    .text {
-        margin-right: 2.5rem;
-        margin-left: 2.5rem;
-    }
+  .author,
+  .russian-title {
+    font-size: 0.5rem;
+  }
 
-    .phrase, .spanish-title {
-        font-size: 1rem;
-    }
+  .phrase,
+  .spanish-title {
+    font-size: 1rem;
+  }
 
-    .author, .russian-title {
-        font-size: 0.5rem;
-    }
-    
-    .shadow {
-        padding-right: 0.7rem;
-        padding-left: 0.7rem;
-    }
+  .shadow {
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+  }
+
+  .text {
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+  }
 }
 
-/* animations */
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity:0;
-    }
-    100% {
-        opacity: 1;
-    }
+@media (min-width: 1600px) {
+  .author,
+  .info,
+  .russian-title {
+    font-size: 2rem;
+  }
+
+  .phrase,
+  .spanish-title {
+    font-size: 2.25rem;
+  }
+
+  .phrase {
+    font-size: 2.25rem;
+  }
+
+  .text {
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
 }
