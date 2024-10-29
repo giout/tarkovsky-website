@@ -229,6 +229,25 @@ a {
 }
 
 /* responsive design */
+@media (min-width: 1600px) {
+    .text {
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+
+    .phrase {
+        font-size: 2.25rem;
+    }
+    
+    .author, .info, .russian-title {
+        font-size: 2rem;
+    }
+
+    .phrase, .spanish-title {
+        font-size: 2.25rem;
+    }
+}
+
 @media (max-width: 991px) {
     .navbar-collapse {
         justify-content: center;
