@@ -159,6 +159,10 @@ img {
   margin-right: 25px !important;
 }
 
+p {
+  text-align: center;
+}
+
 .pic {
   background-position: center;
   background-size: cover;
@@ -213,6 +217,10 @@ span {
   text-align: center;
 }
 
+.sub-title {
+    font-size: 1.25rem;
+}
+
 .text {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -222,6 +230,10 @@ span {
   animation-duration: 1.5s;
   animation-name: fade;
   opacity: 1;
+}
+
+.title {
+  font-size: 2rem;
 }
 
 .title-container {
@@ -236,10 +248,6 @@ span {
   width: 100%;
 }
 
-p {
-  text-align: center;
-}
-
 @keyframes fade {
   0% {
     opacity: 0;
@@ -249,6 +257,28 @@ p {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 1600px) {
+  .author,
+  .info,
+  .russian-title {
+    font-size: 2rem;
+  }
+
+  .phrase,
+  .spanish-title {
+    font-size: 2.25rem;
+  }
+
+  .phrase {
+    font-size: 2.25rem;
+  }
+
+  .text {
+    margin-right: 4rem;
+    margin-left: 4rem;
   }
 }
 
@@ -328,26 +358,8 @@ p {
     margin-right: 2.5rem;
     margin-left: 2.5rem;
   }
-}
 
-@media (min-width: 1600px) {
-  .author,
-  .info,
-  .russian-title {
-    font-size: 2rem;
-  }
-
-  .phrase,
-  .spanish-title {
-    font-size: 2.25rem;
-  }
-
-  .phrase {
-    font-size: 2.25rem;
-  }
-
-  .text {
-    margin-right: 4rem;
-    margin-left: 4rem;
+  .title {
+    font-size: 1.5rem;
   }
 }
