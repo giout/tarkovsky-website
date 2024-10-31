@@ -8,3 +8,6 @@ https://tarkovsky.onrender.com
 * [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 * [Bootstrap](https://getbootstrap.com/)
+
+## System architecture
+![alt text](docs/tarkovsky-website.png)
