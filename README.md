@@ -10,4 +10,4 @@ https://tarkovsky.onrender.com
 * [Bootstrap](https://getbootstrap.com/)
 
 ## System architecture
-![alt text](docs/tarkovsky-website.png)
+![Architecture](docs/architecture.png)
